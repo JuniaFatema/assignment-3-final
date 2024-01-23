@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/36145bb1bc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        paracolor: '#94A3B8',
+                        btncolor: '#FF4240'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-family">
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar mt-10">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="btncolor">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="text-3xl font-extrabold">Hockey<span class="text-btncolor">'</span>s</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex font-bold">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-btncolor">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-x-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn btn-secondary w-32 h-14 font-bold lg:text-[18px] bg-btncolor">Get Ticket</button>
+                </div>
+            </div>
+        </nav>
+        <section class="mt-8">
+            <div class="carousel w-full">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/caro img1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle text-white bg-slate-800">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white bg-slate-800">❯</a>
+                    </div>
+                    <div
+                        class="lg:absolute lg:w-[500px] py-4 pl-8 text-white bg-stone-800 rounded-xl lg:bottom-10 lg:right-10">
+                        <h1 class="text-xl font-extrabold">Meet al the heroes from the field</h1>
+                        <p class="text-slate-400">Sports invites you to embark on an inspiring journey through the
+                            diverse
+                            and impactful world of heroes.It promises a closer look at the individuals to true heroes.
+                        </p>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/caro img1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle text-white bg-slate-800">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white bg-slate-800">❯</a>
+                    </div>
+                    <div
+                        class="lg:absolute lg:w-[500px] py-4 pl-8 text-white bg-stone-800 rounded-xl lg:bottom-10 lg:right-10">
+                        <h1 class="text-xl font-extrabold">Meet al the heroes from the field</h1>
+                        <p class="text-slate-400">Sports invites you to embark on an inspiring journey through the
+                            diverse and impactful world of heroes.It promises a closer look at the individuals to true
+                            heroes.</p>
+                    </div>
+                </div>
+
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/caro img1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle text-white bg-slate-800">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-white bg-slate-800">❯</a>
+                    </div>
+                    <div
+                        class="lg:absolute lg:w-[500px] py-4 pl-8 text-white bg-stone-800 rounded-xl lg:bottom-10 lg:right-10">
+                        <h1 class="text-xl font-extrabold">Meet al the heroes from the field</h1>
+                        <p class="text-slate-400">Sports invites you to embark on an inspiring journey through the
+                            diverse and impactful world of heroes.It promises a closer look at the individuals to true
+                            heroes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lg:hidden bg-stone-800 p-3 rounded-xl ">
+            <h1 class="text-xl font-extrabold text-white">Meet al the heroes from the field</h1>
+            <p class="text-slate-400">Sports invites you to embark on an inspiring journey through the diverse
+                and impactful world of heroes.It promises a closer look at the individuals to true heroes.</p>
+        </div>
+        <!-- Professional Hockey Club -->
+        <section>
+            <div class="text-center my-16 space-y-8 border-y-2 border-dashed px-4 py-12">
+                <h2 class="text-5xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-paracolor p-8 lg:px-48">professional hockey club is a symbol of athletic prowess,
+                    resilience,
+                    and the unbreakable bond between a team and its fans. A professional hockey club represents the
+                    pinnacle of competitive ice hockey, bringing together skilled athletes to compete at the highest
+                    levels of the sport.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 text-center gap-6 mb-12">
+                <div class="space-y-4 lg:p-7">
+                    <div class="flex justify-center items-center">
+                        <img src="./Icons/Group 9 (4).png" alt="">
+                    </div>
+                    <h3 class="text-lg font-bold">Prayer Facility</h3>
+                    <p class="text-paracolor">A prayer facility is a sacred space designed to provide individuals with a
+                        environment for prayer, meditation, and spiritual reflection. </p>
+                </div>
+                <div class="space-y-4 lg:p-7">
+                    <div class="flex justify-center items-center">
+                        <img src="./Icons/Group 9 (3).png" alt="">
+                    </div>
+                    <h3 class="text-lg font-bold">Experienced coach</h3>
+                    <p class="text-paracolor">A prayer facility is a sacred space designed to provide individuals with a
+                        environment for prayer, meditation, and spiritual reflection. </p>
+                </div>
+                <div class="space-y-4 lg:p-7">
+                    <div class="flex justify-center items-center">
+                        <img src="./Icons/Group 9 (2).png" alt="">
+                    </div>
+                    <h3 class="text-lg font-bold">Senior Player</h3>
+                    <p class="text-paracolor">A prayer facility is a sacred space designed to provide individuals with a
+                        environment for prayer, meditation, and spiritual reflection. </p>
+                </div>
+                <div class="space-y-4 lg:p-7">
+                    <div class="flex justify-center items-center">
+                        <img src="./Icons/Group 9 (5).png" alt="">
+                    </div>
+                    <h3 class="text-lg font-bold">Training Ground</h3>
+                    <p class="text-paracolor">A prayer facility is a sacred space designed to provide individuals with a
+                        environment for prayer, meditation, and spiritual reflection. </p>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <!-- Programs Section -->
+        <section class="container mt-10 mx-auto mb-20">
+            <div class="text-center my-16 space-y-8 border-y-2 border-dashed px-4 py-12">
+                <h2 class="text-5xl font-extrabold">Program Sections</h2>
+                <p class="text-paracolor p-8 lg:px-48">professional hockey club is a symbol of athletic prowess,
+                    resilience and the unbreakable bond between a team and its fans. A professional hockey club represents the
+                    pinnacle of competitive ice hockey, bringing together skilled athletes to compete at the highest
+                    levels of the sport.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-4 text-white">
+                <div class="w-full h-[250px] lg:h-[400px] space-y-6 bg-no-repeat bg-cover lg:rounded-xl p-1 lg:px-12 lg:py-12 lg:pt-[150px]"
+                    style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(./images/4.png)">
+                    <h3 class="text-xl font-bold">Junior Program</h3>
+                    <p class="lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button class="btn btn-secondary bg-btncolor border-none">Register Now !</button>
+
+                </div>
+                <div class="w-full h-[250px] lg:h-[400px] space-y-6 bg-no-repeat bg-cover lg:rounded-xl p-1 lg:px-12 lg:py-12 lg:pt-[150px]"
+                    style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(./images/2.png)">
+                    <h3 class="text-xl font-bold">Teeneager Program</h3>
+                    <p class="lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button class="btn btn-secondary bg-btncolor border-none">Register Now !</button>
+
+                </div>
+                <div class="lg:col-span-2 w-full h-[250px] lg:h-[400px] space-y-6 bg-no-repeat bg-cover lg:rounded-xl p-1 lg:px-12 lg:py-12 lg:pt-[150px]"
+                    style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(./images/3.png)">
+                    <h3 class="text-xl font-bold">Professional Program</h3>
+                    <p class="lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button class="btn btn-secondary bg-btncolor border-none">Register Now !</button>
+                </div>
+            </div>
+        </section>
+        <!-- Our New Products section -->
+        <section class="container mx-auto mt-20 mb-20">
+            <div class="text-center my-16 space-y-4 border-y-2 border-dashed px-4 py-8">
+                <h2 class="text-5xl font-extrabold">Our New Products</h2>
+                <p class="text-paracolor p-8 lg:px-48">professional hockey club is a symbol of athletic prowess,
+                    resilience,and the unbreakable bond between a team and its fans. A professional hockey club
+                    represents the
+                    pinnacle of competitive ice hockey, bringing together skilled athletes to compete at the highest
+                    levels of the sport.</p>
+            </div>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-10">
+                <div class="border-2 flex flex-col gap-2 lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/5.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 flex flex-col lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/6.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 flex flex-col gap-2 lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/7.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 flex flex-col gap-2 lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/8.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 flex flex-col gap-2 lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/9.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-2 flex flex-col gap-2 lg:flex-row rounded-xl">
+                    <img class="p-5 w-full" src="./Images/10.png" alt="">
+
+                    <div class="p-5 space-y-2 lg:space-y-4 flex flex-col justify-center">
+                        <p class="flex gap-x-2">
+                            <img src="./Icons/Frame (1).png" alt="">5.0
+                            <img src="./Icons/Frame (2).png" alt="">20
+                            <img src="./Icons/Frame (3).png" alt="">200
+                        </p>
+                        <h4 class="text-lg font-bold">World Cup Flags Football</h4>
+                        <p class="text-paracolor">The World Cup has produced legendary players, historic upsets, and
+                            timeless moments that have become part of football folklore.</p>
+                        <div class="flex gap-4">
+                            <p class="text-btncolor font-bold">Price- $22.00</p>
+                            <p class="flex gap-x-2">
+                                <img src="./Icons/Frame (4).png" alt=""> Delivery fee: Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- clients Questions -->
+        <section class="container mx-auto mb-10">
+            <div class="text-center my-16 space-y-8 border-y-2 border-dashed px-4 py-12">
+                <h2 class="text-5xl font-extrabold">Clients Questions</h2>
+                <p class="text-paracolor p-8 lg:px-48">professional hockey club is a symbol of athletic prowess,
+                    resilience,
+                    and the unbreakable bond between a team and its fans. A professional hockey club represents the
+                    pinnacle of competitive ice hockey, bringing together skilled athletes to compete at the highest
+                    levels of the sport.</p>
+            </div>
+            <div class="p-8 border-2 rounded-lg flex flex-col lg:flex-row gap-20 justify-center items-center">
+                <div>
+                    <img src="./Images/11.png" alt="">
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <hr>
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipments
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <hr>
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <hr>
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <hr>
+                        <div class="collapse-title text-xl font-bold">
+                            Sky touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <hr>
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+
+                        <div class="collapse-title text-xl font-bold">
+                            Pricing
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Get In touch section -->
+        <section class="container mx-auto mb-20">
+            <div class="text-center my-16 space-y-4 border-y-2 border-dashed px-4 py-8">
+                <h2 class="text-5xl font-extrabold">Get In Touch</h2>
+                <p class="text-paracolor p-8 lg:px-48">professional hockey club is a symbol of athletic prowess,
+                    resilience,and the unbreakable bond between a team and its fans. A professional hockey club
+                    represents the
+                    pinnacle of competitive ice hockey, bringing together skilled athletes to compete at the highest
+                    levels of the sport.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-x-10">
+                <div class="border-2 p-4 space-y-3 rounded-xl lg:w-[40%] ">
+                    <div class="space-y-7 p-4 bg-[#BCED6E1A] rounded-xl">
+                        <img src="./Images/Group 1171275317.png" alt="">
+                        <div class="space-y-2">
+                            <p class="text-paracolor">Phone Number:</p>
+                            <p class="font-bold">(+62) 123-321-543</p>
+                        </div>
+                    </div>
+                    <div class="space-y-7 p-4 bg-[#FDDD5F1A] rounded-xl">
+                        <img src="./Images/Group 1171275318.png" alt="">
+                        <div class="space-y-2">
+                            <p class="text-paracolor">Email:</p>
+                            <p class="font-bold">hockeys@support.com</p>
+                        </div>
+                    </div>
+                    <div class="space-y-7 p-4 bg-sky-100 rounded-xl">
+                        <img src="./Images/Group 1171275321.png" alt="">
+                        <div class="space-y-2">
+                            <p class="text-paracolor">Location:</p>
+                            <p class="font-bold">152/1 Mohakhali Wireless Gate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 grid grid-cols-1 lg:grid-cols-2 gap-2 lg:flex-1">
+                    <div class="space-y-2 p-2">
+                        <label class="font-bold " for="">Your Name:</label>
+                        <input type="text" placeholder="Enter Your Name"
+                            class="input input-bordered w-full border-none bg-slate-100" />
+                    </div>
+                    <div class="space-y-2 p-2">
+                        <label class="font-bold" for="">Your Email:</label>
+                        <input type="email" placeholder="Enter Your Email"
+                            class="input input-bordered w-full border-none bg-slate-100" />
+                    </div>
+                    <div class="p-2 space-y-3">
+                        <label class="font-bold" for="">Your Subject:</label>
+                        <input type="text" placeholder="Enter Your Subject"
+                            class="input input-bordered w-full border-none bg-slate-100" />
+                    </div>
+                    <div class="p-2 space-y-3">
+                        <label class="font-bold" for="">Your Phone Number:</label>
+                        <input type="text" placeholder="Enter Your Phone Number"
+                            class="input input-bordered w-full border-none bg-slate-100" />
+                    </div>
+                    <div class="grid grid-cols-1 lg:col-span-2">
+                        <div>
+                            <div class="p-2 space-y-3">
+                                <label class="font-bold" for="">Your Message:</label>
+                                <textarea class="textarea textarea-bordered w-full border-none bg-slate-100"
+                                    placeholder="Write Your Message" rows="6"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid grid-cols-1 lg:col-span-2">
+                        <div class="col-span-2">
+                            <div class="p-2 space-y-3">
+                                <button class="btn btn-wide text-white w-full bg-btncolor">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-6 space-y-4 flex flex-col justify-center rounded-lg items-center w-full h-36 bg-slate-100">
+                <h4 class="font-bold text-xl">Social Media</h4>
+                <img src="./Icons/Social.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer class="footer lg:pt-32 bg-black lg:h-[400px] text-white">
+            <div class="lg:pl-[250px] space-y-5">
+                <h3 class="text-2xl font-bold">Get In Touch</h3>
+                <p>Companies play a pivotal role in the global economy, driving innovation,<br> creating employment
+                    opportunities, and contributing to economic growth.</p>
+                <p class="flex gap-2">
+                    <img src="./Icons/Frame (5).png" alt="">hockeys@support.com
+                </p>
+                <p class="flex gap-2">
+                    <img src="./Icons/Frame (6).png" alt="">(+62) 123-321-543
+                </p>
+            </div>
+            <div class="flex lg:flex lg:flex-row gap-[150px]">
+                <div>
+                    <h5 class="pb-4 text-lg font-bold">Company</h5>
+                    <div class="grid space-y-2">
+                        <a class="link link-hover">About Us</a>
+                        <a class="link link-hover">Leadership</a>
+                        <a class="link link-hover">Career</a>
+                        <a class="link link-hover">News & articles</a>
+                        <a class="link link-hover">Legal Notice</a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="pb-4 text-lg font-bold">Support</h5>
+                    <div class="grid space-y-3">
+                        <a class="link link-hover">Help Center</a>
+                        <a class="link link-hover">Contact Us</a>
+                        <a class="link link-hover">Ticket Support</a>
+                        <a class="link link-hover">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="pb-4 text-lg font-bold">Services</h5>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lessons</a>
+                <a class="link link-hover">Private Lessons</a>
+                <a class="link link-hover">Hockeys for Kids</a>
+                <a class="link link-hover">Hockeys for adults</a>
+            </div>
+        </footer>
+
+    </footer>
+
+</body>
+</html>
